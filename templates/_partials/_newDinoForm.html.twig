@@ -1,0 +1,28 @@
+{% for label, messages in app.flashes %}
+    {% for message in messages %}
+        <div class="flash-{{ label }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endfor %}
+
+<form action="{{ url('grow_dinosaur') }}" method="POST">
+    <div class="row">
+        <div class="column">
+            <label for="enclosure">Enclosure</label>
+            <select name="enclosure" id="enclosure">
+                {% for item in listData %}
+                    <option value="{{ item.id }}">Enclosure #{{ item.id }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="column">
+            <label for="specification">Dino description</label>
+            <input type="text" id="specification" name="specification" placeholder="Small carnivorous dino friend" />
+        </div>
+        <div class="column">
+            <label for="">&nbsp;</label>
+            <input type="submit" class="button" value="Grow dinosaur" />
+        </div>
+    </div>
+</form>

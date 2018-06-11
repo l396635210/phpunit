@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2em;
+            }
+
+            body > ul > li {
+                font-family: Source Serif Pro, PT Sans, Trebuchet MS, Helvetica, Arial;
+                font-size: 2em;
+            }
+
+            h2 {
+                font-family: Tahoma, Helvetica, Arial;
+                font-size: 3em;
+            }
+
+            ul {
+                list-style: none;
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="App\Tests\Entity\DinosaurTest">App\Tests\Entity\Dinosaur</h2>
+        <ul>
+            <li style="color: #555753;">✓ Setting length</li>
+            <li style="color: #555753;">✓ Dinosaur has not shrunk</li>
+            <li style="color: #555753;">✓ Return full specification of dinosaur</li>
+            <li style="color: #555753;">✓ Return full specification for tyrannosaurus</li>
+        </ul>
+        <h2 id="App\Tests\Entity\EnclosureTest">App\Tests\Entity\Enclosure</h2>
+        <ul>
+            <li style="color: #555753;">✓ It has no dinosaur by default</li>
+            <li style="color: #555753;">✓ Add dinosaurs</li>
+            <li style="color: #555753;">✓ It does not allow carnivorous dinos to mix herbivores</li>
+            <li style="color: #555753;">✓ It not allow to add dinosaur to unsecure enclosures</li>
+        </ul>
+        <h2 id="App\Tests\Factory\DinosaurFactoryTest">App\Tests\Factory\DinosaurFactory</h2>
+        <ul>
+            <li style="color: #555753;">✓ It grows a large velociraptor</li>
+            <li style="color: #ef2929;">❌ It grows a triceraptors</li>
+            <li style="color: #ef2929;">❌ It grows a baby velociraptor</li>
+            <li style="color: #555753;">✓ It grows a dinosaur from specification </li>
+        </ul>
+        <h2 id="App\Tests\Service\DinosaurLengthDeterminatorTest">App\Tests\Service\DinosaurLengthDeterminator</h2>
+        <ul>
+            <li style="color: #555753;">✓ It return correct length range </li>
+        </ul>
+        <h2 id="App\Tests\Service\EnclosureBuilderServiceTest">App\Tests\Service\EnclosureBuilderService</h2>
+        <ul>
+            <li style="color: #555753;">✓ It builds and persists enclosure</li>
+        </ul>
+    </body>
+</html>
